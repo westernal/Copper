@@ -249,7 +249,6 @@ select:focus {
 .filters {
   justify-content: space-between;
   padding: 10px 20px;
-  border-bottom: 1px solid #ededed;
 }
 
 #user-select {
@@ -293,4 +292,67 @@ select:focus {
 .filters-select p {
   font-size: 10px;
   opacity: 0.7;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+}
+
+table img {
+  width: 10px;
+}
+
+table tr th {
+  gap: 5px !important;
+  padding: 10px;
+  opacity: 0.7;
+}
+
+table tr th:nth-child(2) {
+  color: #2b41b2;
+  opacity: 1;
+}
+
+#sort {
+  transform: rotate(180deg);
+  margin-top: 0px;
+
+  filter: brightness(0);
+}
+
+table,
+td {
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  opacity: 0.7;
+}
+
+td:nth-child(3) {
+  border-right: 1px solid #ededed;
+}
+
+td span {
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #dce3e6;
+  text-align: center;
+}
+
+td:nth-child(3) {
+  opacity: 1;
+  font-weight: 600;
+}
+
+td:nth-child(4),
+td:nth-child(6),
+td:nth-child(7),
+.first-name {
+  opacity: 1;
+  color: #2b41b2;
 }
