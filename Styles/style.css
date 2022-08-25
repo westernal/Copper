@@ -27,6 +27,11 @@ a {
   color: white;
 }
 
+.main {
+  display: grid;
+  grid-template-columns: 201px auto;
+}
+
 .sidebar {
   background-color: #311d40;
   color: white;
@@ -150,4 +155,92 @@ a {
 .logo-section {
   font-size: 30px;
   margin-top: 100px;
+}
+
+.header {
+  width: 100%;
+  padding: 0 20px;
+  justify-content: space-between;
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+.header-text {
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 2px solid #2b41b2;
+  padding: 8px 0 6px 0;
+}
+
+.search-input {
+  position: relative;
+}
+
+.search-input input {
+  width: 30vw;
+  border: none;
+  border-radius: 10px;
+  background-color: #eaf0f3;
+  padding: 5px 15px 5px 50px;
+  font-size: 11px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#search-icon {
+  top: 5px;
+  left: 15px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+}
+
+.header-options {
+  gap: 20px;
+}
+
+#add {
+  font-size: 18px;
+}
+
+.notification {
+  position: relative;
+}
+
+.notification img {
+  width: 15px;
+  margin-top: 5px;
+}
+
+.notif-count {
+  position: absolute;
+  font-size: 7px;
+  background-color: #b50814;
+  color: white;
+  border-radius: 50%;
+  padding-top: 1px;
+  top: 0;
+  left: 7px;
+  justify-content: center;
+  width: 13px;
+  height: 13px;
+}
+
+.p-logo {
+  width: 16px;
+  height: 16px;
+  padding-bottom: 4px;
+  color: white;
+  background-color: #343a3c;
+  justify-content: center;
+}
+
+.help {
+  justify-content: center;
+  background-color: #939798;
+  color: white;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
 }
