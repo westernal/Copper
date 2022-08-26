@@ -294,9 +294,16 @@ select:focus {
   opacity: 0.7;
 }
 
+.dashboard-table {
+  overflow-x: auto;
+  max-width: 100vw;
+}
+
 table {
   width: 100%;
   text-align: left;
+  border-spacing: 0;
+  white-space: nowrap;
 }
 
 table img {
@@ -331,6 +338,7 @@ td {
 td {
   padding: 10px;
   opacity: 0.7;
+  min-width: 100px;
 }
 
 td:nth-child(3) {
@@ -355,4 +363,60 @@ td:nth-child(7),
 .first-name {
   opacity: 1;
   color: #2b41b2;
+}
+
+.burger-menu img,
+.burger-menu {
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+
+.info-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  width: 0px;
+  z-index: 3;
+  overflow-y: hidden;
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+@media only screen and (max-width: 800px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    width: 0px;
+    z-index: 3;
+    overflow-y: hidden;
+  }
+
+  .main {
+    grid-template-columns: auto;
+  }
+
+  .burger-menu,
+  .burger-menu img {
+    display: block;
+  }
+
+  th {
+    font-size: 10px;
+  }
+
+  td {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #add-select,
+  #user-select {
+    font-size: 7px;
+  }
 }
