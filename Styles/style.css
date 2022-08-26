@@ -158,8 +158,11 @@ a {
 }
 
 .header {
+  position: relative;
   width: 100%;
+  background-color: white;
   padding: 0 20px;
+  z-index: 4;
   justify-content: space-between;
   box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
@@ -345,7 +348,8 @@ td:nth-child(3) {
   border-right: 1px solid #ededed;
 }
 
-td span {
+td span,
+.info-user span {
   padding: 5px;
   border-radius: 50%;
   background-color: #dce3e6;
@@ -375,13 +379,100 @@ td:nth-child(7),
 .info-bar {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
+  background-color: white;
   overflow-x: hidden;
   transition: 0.5s;
   width: 0px;
+  height: 100vh;
   z-index: 3;
-  overflow-y: hidden;
+  padding-top: 30px;
+  overflow-y: scroll;
   box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+.item:hover,
+.item:focus {
+  background-color: #ededed;
+}
+
+.info-icons {
+  padding: 10px;
+  opacity: 0.7;
+  justify-content: space-between;
+}
+
+.info-icons img {
+  width: 14px;
+}
+
+.more-info {
+  display: block;
+  margin-top: 12px;
+}
+
+.more-info div {
+  font-size: 20px;
+  margin-top: -25px;
+}
+
+.info-user {
+  padding: 0 20px 10px 20px;
+}
+
+.info-user span {
+  padding: 10px;
+}
+
+.user {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.company-name {
+  font-size: 10px;
+}
+
+.info-menu p {
+  font-size: 11px;
+  padding: 6px;
+}
+
+.info-item {
+  padding: 15px;
+  font-size: 11px;
+}
+
+.info-item img {
+  width: 12px;
+}
+
+.info-name {
+  justify-content: space-between;
+}
+
+.info-name span {
+  font-weight: 600;
+  color: #b50814;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.info-name .flex p {
+  opacity: 0.7;
+}
+
+.blue-text {
+  color: #2b41b2;
+}
+
+.info-detail input {
+  border: none;
+  font-size: 11px;
+}
+
+.info-detail {
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 800px) {
